@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update a new blog</title>
+</head>
+
+<body>
+    <h1>
+        Update a new blog
+    </h1>
+    <form action="/blogs/update" method="post">
+        <input type="hidden" name="id" value="<%= blog.id %>" />
+        <label for="name">Name:</label>
+        <input type="text" name="name" value="<%= blog.name %>" />
+        <br />
+        <label for="category">Category:</label>
+        <input type="text" name="category" value="<%= blog.category %>" />
+        <input type="submit" />
+    </form>
+</body>
+
+</html>
